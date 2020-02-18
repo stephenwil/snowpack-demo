@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "npm run-script build && npx servor",
+    "build_old": "npx snowpack",
+    "build": "npx snowpack --optimize --clean --include 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,6 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "htm": "^3.0.3",
+    "lodash": "^4.17.15",
     "preact": "^10.3.2"
   },
   "devDependencies": {
